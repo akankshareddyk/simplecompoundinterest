@@ -1,0 +1,45 @@
+package client;
+import java.io.*;  
+public class HouseConstruction {
+    public void Constructioncost(String material){
+    String.format("the house materail : %s",material);
+    }
+    public void House(String material,double area){
+    double totalarea;
+   String s1="standard";  
+   String s2="abovestandard";  
+   String s3="highlystandard";  
+   String s4="highlyequiped";  
+   if ( material.equals(s1)) {
+                boolean automated = false;
+                totalarea=area*1200;
+                System.out.format("The toal area of house :%.2f square feets \n",totalarea);
+                System.out.format("The house is automated  :%b \n",automated);
+            }
+   else if(material.equals(s2)){
+                boolean automated = false;
+                totalarea=area*1500;
+                System.out.format("The toal area of house :%.2fsquare feets\n",totalarea);
+                System.out.format("The house is automated  :%b \n",automated);
+    }
+   else if( material.equals(s3)){
+                boolean automated = false;
+                totalarea=area*1800;
+                System.out.format("The toal area of house :%.2fsquare feets\n",totalarea);
+                System.out.format("The house is automated  :%b \n",automated);
+    }
+   else if( material.equals(s4)){
+               boolean automated = true;
+               totalarea=area*2500;
+               System.out.format("The toal area of house :%.2fsquare feets\n",totalarea);
+               System.out.format("The house is automated  :%b \n",automated);
+    }  
+   else {
+        System.out.format("Material not found ");
+   }
+
+}
+
+    
+}
+

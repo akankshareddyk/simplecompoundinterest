@@ -1,0 +1,16 @@
+package client;
+import java.util.Scanner;
+import client.HouseConstruction;
+public class client_application {
+        public static void main(String[] args) {
+        HouseConstruction object = new HouseConstruction();
+        Scanner obj1=new Scanner(System.in);
+        System.out.print("Enter  material to be used : ");
+        String buffer=obj1.nextLine();
+        String material=buffer.toLowerCase();
+        System.out.print("Enter area of house : ");
+        double area = obj1.nextDouble();
+        object.Constructioncost(material);
+        object.House(material, area);
+}
+}

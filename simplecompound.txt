@@ -1,0 +1,19 @@
+package compound;
+import java.util.Scanner;
+import java.io.*;
+public class simplecompound {
+        public void   calculateInterest(double p, double t, double r) // LINE B
+    {
+      
+        double result = p* t* r / 100.0;
+        System.out.format(" Result for simple interest :%.2f\n",result); 
+        
+    }
+        public void  compoundInterest(int prince, int time, double rate, int n) {
+        double amount = prince * Math.pow(1 + (rate / n), n * time);
+        double cinterest = amount - prince;
+        System.out.format("Interest for compound interest : %.2f\n", cinterest);
+        System.out.format("Amount for compound interest :%.2f\n",amount);
+        
+}
+}
